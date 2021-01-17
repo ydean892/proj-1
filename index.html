@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF_8">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challenge 1:Your Age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onClick="age()">Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">reset</button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <h2>Challenge 2:Generate Shivam</h2>
+        <button class="btn btn-success" id="shivam-generate" onclick="generateShivam()">Generate Shivam</button>
+        <div class="flex-box-container-2" id="flex-shivam">
+        </div>
+    </div>
+    
+    <div class="container-3" id="cont-3">
+        <h2>Challenge 3:Rock,Paper,Scissor</h2>
+         <button class="btn btn-danger" id="try" onClick='retry()'>try</button>
+    </div>
+
+    <div class="container-4">
+        <h2 id="change-color">Challenge 4:Change Colors</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                <option value="random">Random</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Shivam!</button>
+            <button class="btn btn-danger">Raman!</button>
+            <button class="btn btn-warning">Bittoo!</button>
+            <button class="btn btn-success">Prince!</button>
+        </div>
+    </div>
+
+    <div class="container-5">
+        <h2>Challenge 5:Black Jack</h2>
+            <h3><span id="bj-result">let's play</span></h3>
+            <div class="flex-blackjack-row-1">
+                <div id="your-box">
+                    <h2>You: <span id="your-bj-result">0</span></h2>
+                </div>
+
+                <div id="dealer-box">
+                    <h2>Dealer: <span id="dealer-bj-result">0</span></h2>
+                </div>
+            </div>
+            <div class="flex-blackjack-row-2">
+                <div>
+                    <button class="btn-lg btn-primary mr-2" id="bj-hit-btn">Hit</button>
+                    <button class="btn-lg btn-warning mr-2" id="bj-stand-btn">Stand</button>
+                    <button class="btn-lg btn-danger" id="bj-deal-btn">Deal</button>
+                </div>
+            </div>
+            <div class="flex-blackjack-row-3">
+                <table>
+                    <tr>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>Draw</th>
+                    </tr>
+
+                    <tr>
+                        <td><span id="wins">0</span></td>
+                        <td><span id="losses">0</span></td>
+                        <td><span id="draws">0</span></td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
